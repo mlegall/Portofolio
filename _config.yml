@@ -1,9 +1,16 @@
 theme: jekyll-theme-minimal
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
 
 title: [Marine Le Gall]
 description: [Présentation de mes projets]
 logo: /logo.png
 show_downloads: true
+
+social-network-links:
+  rss: true
+email: "someone@example.com"
