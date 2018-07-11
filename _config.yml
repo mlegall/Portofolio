@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
-title: [Marine portofolio]
-
+title: [Marine Le Gall]
+logo: [logo.png]
+description: [Présentation de mes projets]
+show_downloads: ["true" or "false" to indicate whether to provide a download URL]
