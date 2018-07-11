@@ -2,4 +2,4 @@ theme: jekyll-theme-minimal
 title: [Marine Le Gall]
 description: [Présentation de mes projets]
 show_downloads: ["true"]
-logo: [./logo.png]
+logo: ./logo.png
