@@ -2,7 +2,10 @@
 layout: default
 ---
 
-<h1>partie1</h1>
+# Partie1
 hello
+lkkok
 
-<h1>partie2</h1>
+## Sous-partie1
+
+# Partie 2
