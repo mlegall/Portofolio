@@ -5,3 +5,5 @@ plugins:
 
 title: [Marine Le Gall]
 description: [Présentation de mes projets]
+logo: ./logo.png
+show_downloads: true
