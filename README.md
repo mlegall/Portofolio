@@ -4,7 +4,7 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
 
 <h1>Parcours</h1>
 CV
-Projet [ickokoki](https://mlegall.github.io/Portofolio/RENNES_BOUQUET_LEGALL_RUBION_180117.pdf)
+Projet 
 <h1>Dossiers</h1>
 
 <h1>DataScience</h1>
