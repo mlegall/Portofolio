@@ -1,4 +1,8 @@
-theme: jekyll-theme-minimal
+theme: minima
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+
 title: [Marine Le Gall]
 description: [Présentation de mes projets]
 show_downloads: ["true"]
