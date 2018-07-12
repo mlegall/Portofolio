@@ -1,4 +1,10 @@
 <meta charset="utf-8">
+<style>
+    #map {
+    height: 300px;
+    width: 600px;
+}
+</style>
 <body>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
@@ -93,30 +99,8 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
    integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
    crossorigin=""></script>
    
-<div id="map"  style="height: 300px; margin-top: 50px"></div>
-<script  type="text/javascript">
-var map = L.map('map').setView([51.505, -0.09], 3);
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: ''
-}).addTo(map);
-
-L.marker([51.5, -0.09]).addTo(map)
-    .openPopup();
-    
-var circle = L.circle([51.442749,-0.2208968],
-[48.117232,-1.6734248],
-[48.1176084,-1.6661783],
-{
-    color: 'orange',
-    stroke: false,
-    fillColor: 'orange',
-    fillOpacity: 0.5,
-    radius: 500
-}).addTo(map);
-
-</script>
-
+<div id="map"></div>
+<script async src="//jsfiddle.net/sgu5dc0k/398/embed/"></script>
 
 <h1>Dossiers</h1>
 
