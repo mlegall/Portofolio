@@ -154,6 +154,6 @@ L.control.layers(null,overlays, {collapsed: false}).addTo(map);
 
 <body>
 	<div id="map" style="width:600px; height:300px; border:solid 1px black;"></div>
-	<iframe width="100%" height="300" src="//jsfiddle.net/sgu5dc0k/398/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="400" src="//jsfiddle.net/sgu5dc0k/398/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 </body>
