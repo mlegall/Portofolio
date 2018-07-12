@@ -89,7 +89,7 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"></script>
    
-<div id="map" width="400px" height="400px"></div>
+<div id="map" width="400" height="400"></div>
 <script type="text/js" src="/myMap.js"></script>
 
 <h1>Dossiers</h1>
