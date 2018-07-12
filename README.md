@@ -1,7 +1,3 @@
-
-<!DOCTYPE html>
-
-<html>
 <meta charset="utf-8">
     <style>
  #map { height: 180px; }
@@ -105,7 +101,7 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
    crossorigin=""></script>
    
 <div id="map"></div>
-<script type="text/js" src="/myMap.js"></script>
+<script type="text/js" src="myMap.js"></script>
 
 <h1>Dossiers</h1>
 
