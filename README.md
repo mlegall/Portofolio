@@ -2,7 +2,6 @@
 <body>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
-
 var width = 700,
     height = 450,
     τ = 2 * Math.PI,
@@ -89,7 +88,7 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
 
 
 <div id="map" class="map map-home" style="height: 300px; margin-top: 50px"></div>
-<pre class="basic-code javascript"><code>
+<script>
 var map = L.map('map').setView([51.505, -0.09], 13);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -98,7 +97,10 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 L.marker([51.5, -0.09]).addTo(map)
     .bindPopup('A pretty CSS3 popup.&lt;br&gt; Easily customizable.')
-    .openPopup();</code></pre>
+    .openPopup();
+</script>
+
+
 <h1>Dossiers</h1>
 
 <h1>DataScience</h1>
