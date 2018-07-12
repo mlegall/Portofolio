@@ -1,27 +1,31 @@
-
-
 <meta charset="utf-8">
 <style>
+
 .links {
-  stroke: #0066ff;
-  stroke-opacity: 0;
+  stroke: #000;
+  stroke-opacity: 0.2;
 }
+
 .polygons {
   fill: none;
-  stroke: #0066ff;
+  stroke: #000;
 }
+
 .polygons :first-child {
-  fill: #0066ff;
+  fill: #f00;
 }
+
 .sites {
-  fill: #0066ff;
+  fill: #000;
   stroke: #fff;
 }
+
 .sites :first-child {
-  fill: #0066ff;
+  fill: #fff;
 }
+
 </style>
-<svg width="100%" height="10%"></svg>
+<svg width="960" height="500"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 var svg = d3.select("svg").on("touchmove mousemove", moved),
