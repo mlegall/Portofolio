@@ -2,11 +2,6 @@
 
 <meta charset="utf-8">
 <style>
-.box{
-  float: top;
-  width: 100%;
-  height: 10%;
- }
 .links {
   stroke: #0066ff;
   stroke-opacity: 0;
@@ -26,7 +21,7 @@
   fill: #0066ff;
 }
 </style>
-<svg id='box'></svg>
+<svg width="100%" height="10%"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 var svg = d3.select("svg").on("touchmove mousemove", moved),
