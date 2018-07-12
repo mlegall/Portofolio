@@ -1,7 +1,7 @@
 ---
 layout: default
 title: home
-permalink: /404.html
+permalink: ./404.html
 ---
 
 # Partie1
