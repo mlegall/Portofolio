@@ -88,7 +88,7 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
 
 
 <div id="map" class="map map-home" style="height: 300px; margin-top: 50px"></div>
-<script>
+<script  type="text/javascript">
 var map = L.map('map').setView([51.505, -0.09], 13);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
