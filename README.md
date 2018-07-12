@@ -1,5 +1,11 @@
 <meta charset="utf-8">
 <head>
+	<style>
+	#map {
+  	height: 300px;
+  	width: 600px;
+		}
+	</style>
 </head>
 
 <body>
@@ -9,7 +15,7 @@
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"></script>
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"></script>
 
-<div id="map"  height="30" width="60"></div>
+<div id="map"  ></div>
 <script>//EDUCATION
 var Cursus = L.layerGroup();
 
