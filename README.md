@@ -1,9 +1,9 @@
 <meta charset="utf-8">
 <head>
 	<style>
-	#map {
-  	height: 100%;
-  	width: 100%;
+		#map {
+		height: 300px;
+		width: 600px;
 		}
 	</style>
 	
