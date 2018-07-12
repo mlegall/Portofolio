@@ -8,7 +8,7 @@ Bienvenu !
 Vous trouverez ici la présentation de différents projets que j'ai pu réaliser durant mes études ou bien lors d'expériences professionnelles.
 </head>
 
-<body>
+
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script src="./myVoronoi.js"></script>
   
@@ -20,7 +20,6 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
    crossorigin=""></script>
 
 <h1>Parcours</h1>
-<div id="map" style="width:300px; height:600px; border:solid 1px black;"></div>
 <script>
 var Cursus = L.layerGroup();
 
@@ -156,6 +155,9 @@ L.control.layers(null,overlays, {collapsed: false}).addTo(map);
 
 </script>
 
-<iframe width="100%" height="300" src="//jsfiddle.net/sgu5dc0k/398/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+<body>
+	<div id="map" style="width:300px; height:600px; border:solid 1px black;"></div>
+	<iframe width="100%" height="300" src="//jsfiddle.net/sgu5dc0k/398/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 </body>
