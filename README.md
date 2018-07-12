@@ -1,7 +1,4 @@
----
-layout: default
-title: Accueil
----
+
 
 <meta charset="utf-8">
 <style>
