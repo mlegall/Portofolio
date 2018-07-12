@@ -1,8 +1,14 @@
+---
+layout: default
+title: Accueil
+---
+
 <meta charset="utf-8">
 <style>
-box{
+.box{
   float: top;
-  height: 200;
+  width: 100%;
+  height: 10%;
  }
 .links {
   stroke: #0066ff;
