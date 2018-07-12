@@ -1,86 +1,82 @@
 <meta charset="utf-8">
-<style>
-
-.links {
-  stroke: #000;
-  stroke-opacity: 0.2;
-}
-
-.polygons {
-  fill: none;
-  stroke: #000;
-}
-
-.polygons :first-child {
-  fill: #f00;
-}
-
-.sites {
-  fill: #000;
-  stroke: #fff;
-}
-
-.sites :first-child {
-  fill: #fff;
-}
-
-</style>
-<svg width="100%" height="10%"></svg>
-<script src="https://d3js.org/d3.v4.min.js"></script>
+<body>
+<script src="//d3js.org/d3.v3.min.js"></script>
 <script>
-var svg = d3.select("svg").on("touchmove mousemove", moved),
-    width = +svg.attr("width"),
-    height = +svg.attr("height");
-var sites = d3.range(100)
-    .map(function(d) { return [Math.random() * width, Math.random() * height]; });
-var voronoi = d3.voronoi()
-    .extent([[-1, -1], [width + 1, height + 1]]);
-var polygon = svg.append("g")
-    .attr("class", "polygons")
-  .selectAll("path")
-  .data(voronoi.polygons(sites))
-  .enter().append("path")
-    .call(redrawPolygon);
-var link = svg.append("g")
-    .attr("class", "links")
-  .selectAll("line")
-  .data(voronoi.links(sites))
-  .enter().append("line")
-    .call(redrawLink);
-var site = svg.append("g")
-    .attr("class", "sites")
-  .selectAll("circle")
-  .data(sites)
-  .enter().append("circle")
-    .attr("r", 2.5)
-    .call(redrawSite);
+
+var width = 960,
+    height = 500,
+    τ = 2 * Math.PI,
+    maxLength = 100,
+    maxLength2 = maxLength * maxLength;
+
+var nodes = d3.range(200).map(function() {
+  return {
+    x: Math.random() * width,
+    y: Math.random() * height
+  };
+});
+
+var force = d3.layout.force()
+    .size([width, height])
+    .nodes(nodes.slice())
+    .charge(function(d, i) { return i ? -30 : -1500; })
+    .on("tick", ticked)
+    .start();
+
+var voronoi = d3.geom.voronoi()
+    .x(function(d) { return d.x; })
+    .y(function(d) { return d.y; });
+
+var root = nodes.shift();
+
+root.fixed = true;
+
+var canvas = d3.select("body").append("canvas")
+    .attr("width", width)
+    .attr("height", height)
+    .on("ontouchstart" in document ? "touchmove" : "mousemove", moved);
+
+var context = canvas.node().getContext("2d");
+
 function moved() {
-  sites[0] = d3.mouse(this);
-  redraw();
+  var p1 = d3.mouse(this);
+  root.px = p1[0];
+  root.py = p1[1];
+  force.resume();
 }
-function redraw() {
-  var diagram = voronoi(sites);
-  polygon = polygon.data(diagram.polygons()).call(redrawPolygon);
-  link = link.data(diagram.links()), link.exit().remove();
-  link = link.enter().append("line").merge(link).call(redrawLink);
-  site = site.data(sites).call(redrawSite);
+
+function ticked() {
+  var links = voronoi.links(nodes);
+
+  context.clearRect(0, 0, width, height);
+
+  context.beginPath();
+  for (var i = 0, n = links.length; i < n; ++i) {
+    var link = links[i],
+        dx = link.source.x - link.target.x,
+        dy = link.source.y - link.target.y;
+    if (dx * dx + dy * dy < maxLength2) {
+      context.moveTo(link.source.x, link.source.y);
+      context.lineTo(link.target.x, link.target.y);
+    }
+  }
+  context.lineWidth = 1;
+  context.strokeStyle = "#bbb";
+  context.stroke();
+
+  context.beginPath();
+  for (var i = 0, n = nodes.length; i < n; ++i) {
+    var node = nodes[i];
+    context.moveTo(node.x, node.y);
+    context.arc(node.x, node.y, 2, 0, τ);
+  }
+  context.lineWidth = 3;
+  context.strokeStyle = "#fff";
+  context.stroke();
+  context.fillStyle = "#000";
+  context.fill();
 }
-function redrawPolygon(polygon) {
-  polygon
-      .attr("d", function(d) { return d ? "M" + d.join("L") + "Z" : null; });
-}
-function redrawLink(link) {
-  link
-      .attr("x1", function(d) { return d.source[0]; })
-      .attr("y1", function(d) { return d.source[1]; })
-      .attr("x2", function(d) { return d.target[0]; })
-      .attr("y2", function(d) { return d.target[1]; });
-}
-function redrawSite(site) {
-  site
-      .attr("cx", function(d) { return d[0]; })
-      .attr("cy", function(d) { return d[1]; });
-}
+
 </script>
 
 
