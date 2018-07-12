@@ -100,7 +100,7 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
    crossorigin=""></script>
    
 <div id="map"></div>
-<script async src="//jsfiddle.net/sgu5dc0k/398/embed/"></script>
+<script type="text/js" src="myMap.js"></script>
 
 <h1>Dossiers</h1>
 
