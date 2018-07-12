@@ -10,7 +10,6 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
   
 
 <body>
-	<div id="map" style="width:600px; height:300px; border:solid 1px black;"></div>
 <iframe width="600px" height="400" src="//jsfiddle.net/sgu5dc0k/398/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 </body>
