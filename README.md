@@ -1,13 +1,9 @@
 <meta charset="utf-8">
 <head>
-	<style>
-	</style>
-	
 Bienvenu !
 
 Vous trouverez ici la présentation de différents projets que j'ai pu réaliser durant mes études ou bien lors d'expériences professionnelles.
 </head>
-
 
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script src="./myVoronoi.js"></script>
@@ -157,7 +153,7 @@ L.control.layers(null,overlays, {collapsed: false}).addTo(map);
 
 
 <body>
-	<div id="map" style="width:300px; height:600px; border:solid 1px black;"></div>
+	<div id="map" style="width:600px; height:300px; border:solid 1px black;"></div>
 	<iframe width="100%" height="300" src="//jsfiddle.net/sgu5dc0k/398/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 </body>
