@@ -29,7 +29,7 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
   fill: #0066ff;
 }
 </style>
-<svg width="800" height="300"></svg>
+<svg height="300"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 var svg = d3.select("svg").on("touchmove mousemove", moved),
