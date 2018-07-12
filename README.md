@@ -1,9 +1,10 @@
 <meta charset="utf-8">
 <head>
- </head>
+</head>
+
 <body>
 <script src="//d3js.org/d3.v3.min.js"></script>
-<script type="text/js"> var width = 700, height = 450, τ = 2 * Math.PI, maxLength = 80, maxLength2 = maxLength * maxLength;
+<script> var width = 700, height = 450, τ = 2 * Math.PI, maxLength = 80, maxLength2 = maxLength * maxLength;
 
 var nodes = d3.range(200).map(function() { return { x: Math.random() * width, y: Math.random() * height }; });
 
@@ -29,25 +30,5 @@ context.beginPath(); for (var i = 0, n = links.length; i < n; ++i) { var link = 
 
 context.beginPath(); for (var i = 0, n = nodes.length; i < n; ++i) { var node = nodes[i]; context.moveTo(node.x, node.y); context.arc(node.x, node.y, 2, 0, τ); } context.lineWidth = 3; context.strokeStyle = "#e6f2ff"; context.stroke(); context.fillStyle = "#3399ff"; context.fill(); }
 </script>
-
-Bienvenu !
-
-Vous trouverez ici la présentation de différents projets que j'ai pu réaliser durant mes études ou bien lors d'expériences professionnelles.
-
-<h1>Parcours</h1>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
-   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
-   crossorigin=""/>
- <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
-   integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
-   crossorigin=""></script>
-   
-<div id="map"></div>
-<script type="text/js" src="/myMap.js"></script>
-
-
-
-<h1>Dossiers</h1>
-<h1>DataScience</h1>
 
 </body>
