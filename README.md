@@ -1,10 +1,6 @@
 <meta charset="utf-8">
 <head>
 	<style>
-		#map {
-		height: 300px;
-		width: 600px;
-		}
 	</style>
 	
 Bienvenu !
