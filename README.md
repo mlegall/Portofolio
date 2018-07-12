@@ -15,12 +15,12 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"></script>
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"></script>
  <!-- Make sure you put this AFTER Leaflet's CSS -->
- <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
    integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
    crossorigin=""></script>
 
 <h1>Parcours</h1>
-<div id="map" ></div>
+<div id="map" style="width:300px; height:120px; overflow:auto; border:solid 1px black;"></div>
 <script>//EDUCATION
 var Cursus = L.layerGroup();
 
