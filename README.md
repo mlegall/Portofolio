@@ -3,8 +3,8 @@
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
-var width = 960,
-    height = 500,
+var width = 700,
+    height = 450,
     τ = 2 * Math.PI,
     maxLength = 100,
     maxLength2 = maxLength * maxLength;
