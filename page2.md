@@ -3,7 +3,7 @@ layout: default
 title: page2
 ---
 
-```javascript
+```
 var voronoi =  new Voronoi();
 var sites = generateBeeHivePoints(view.size / 200, true);
 var bbox, diagram;
