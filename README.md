@@ -6,6 +6,10 @@
   	width: 100%;
 		}
 	</style>
+	
+Bienvenu !
+
+Vous trouverez ici la présentation de différents projets que j'ai pu réaliser durant mes études ou bien lors d'expériences professionnelles.
 </head>
 
 <body>
@@ -15,7 +19,9 @@
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"></script>
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"></script>
 
-<div id="map"  ></div>
+
+<h1>Parcours</h1>
+<div id="map" ></div>
 <script>//EDUCATION
 var Cursus = L.layerGroup();
 
