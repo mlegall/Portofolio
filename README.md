@@ -61,7 +61,7 @@ function ticked() {
     }
   }
   context.lineWidth = 1;
-  context.strokeStyle = "#3399ff";
+  context.strokeStyle = "#e6f2ff";
   context.stroke();
 
   context.beginPath();
@@ -71,9 +71,9 @@ function ticked() {
     context.arc(node.x, node.y, 2, 0, τ);
   }
   context.lineWidth = 3;
-  context.strokeStyle = "#3399ff";
+  context.strokeStyle = "#e6f2ff";
   context.stroke();
-  context.fillStyle = "#000";
+  context.fillStyle = "#3399ff";
   context.fill();
 }
 
