@@ -1,8 +1,8 @@
 <meta charset="utf-8">
-    <style>
+<style>
  #map { height: 180px; }
  </style>
-    <head>
+ 
 <head> yoyoyoyo
 </head>
 
