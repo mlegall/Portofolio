@@ -87,7 +87,6 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
 
 <h1>Parcours</h1>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"/>
-
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"></script>
    
 <div id="map" width=400px height=400px></div>
@@ -97,3 +96,4 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
 
 <h1>DataScience</h1>
 
+</body>
