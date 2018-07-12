@@ -6,7 +6,7 @@
 var width = 700,
     height = 450,
     τ = 2 * Math.PI,
-    maxLength = 100,
+    maxLength = 80,
     maxLength2 = maxLength * maxLength;
 
 var nodes = d3.range(200).map(function() {
