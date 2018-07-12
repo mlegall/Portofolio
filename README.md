@@ -2,8 +2,8 @@
 <head>
 	<style>
 	#map {
-  	height: 300px;
-  	width: 600px;
+  	height: 100%;
+  	width: 100%;
 		}
 	</style>
 </head>
