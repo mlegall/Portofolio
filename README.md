@@ -10,7 +10,7 @@
 
 <body>
 <script src="//d3js.org/d3.v3.min.js"></script>
-<script src="./myVoronoi"></script>
+<script src="./myVoronoi.js"></script>
   
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"></script>
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"></script>
