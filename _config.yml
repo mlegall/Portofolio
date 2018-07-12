@@ -7,7 +7,7 @@ plugins:
 
 
 title: Marine Le Gall
-description: marinelg@protonmail.com
+description: {% octicon mail %} marinelg@protonmail.com
 logo: /logo.png
 show_downloads: true
 
