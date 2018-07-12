@@ -1,15 +1,9 @@
-Bienvenu !
-
-Vous trouverez ici la présentation de différents projets que j'ai pu réaliser durant mes études ou bien lors d'expériences professionnelles.
-
-<h1>Parcours</h1>
-
-<h1>Dossiers</h1>
-
-<h1>DataScience</h1>
-
 <meta charset="utf-8">
 <style>
+box{
+  float: top;
+  height: 200;
+ }
 .links {
   stroke: #0066ff;
   stroke-opacity: 0;
@@ -29,7 +23,7 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
   fill: #0066ff;
 }
 </style>
-<svg height="300"></svg>
+<svg id='box'></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 var svg = d3.select("svg").on("touchmove mousemove", moved),
@@ -86,3 +80,16 @@ function redrawSite(site) {
       .attr("cy", function(d) { return d[1]; });
 }
 </script>
+
+
+
+Bienvenu !
+
+Vous trouverez ici la présentation de différents projets que j'ai pu réaliser durant mes études ou bien lors d'expériences professionnelles.
+
+<h1>Parcours</h1>
+
+<h1>Dossiers</h1>
+
+<h1>DataScience</h1>
+
