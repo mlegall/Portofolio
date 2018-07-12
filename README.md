@@ -95,14 +95,22 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
    
 <div id="map"  style="height: 300px; margin-top: 50px"></div>
 <script  type="text/javascript">
-var map = L.map('map').setView([51.505, -0.09], 13);
+var map = L.map('map').setView([51.505, -0.09], 3);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&amp;copy; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt; contributors'
+    attribution: ''
 }).addTo(map);
 
 L.marker([51.5, -0.09]).addTo(map)
     .openPopup();
+    
+var circle = L.circle([51.508, -0.11], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(map);
+
 </script>
 
 
