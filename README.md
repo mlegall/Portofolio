@@ -10,6 +10,6 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
   
 
 <body>
-<iframe width="100%" height="400" src="//jsfiddle.net/sgu5dc0k/403/embedded/result/" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="400" src="//jsfiddle.net/sgu5dc0k/406/embedded/result/" allowpaymentrequest frameborder="0" style="display: none;"></iframe>
 
 </body>
