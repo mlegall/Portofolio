@@ -161,7 +161,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     maxZoom: 18,
     id: 'mapbox.streets',
     accessToken: 'your.mapbox.access.token'
-}).addTo(mymap);
+}).addTo(map);
 </script>
 
 </body>
