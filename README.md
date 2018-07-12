@@ -20,7 +20,7 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
    crossorigin=""></script>
 
 <h1>Parcours</h1>
-<div id="map" style="width:300px; height:120px; overflow:auto; border:solid 1px black;"></div>
+<div id="map" style="width:300px; height:600px; border:solid 1px black;"></div>
 <script>
 var Cursus = L.layerGroup();
 
@@ -154,8 +154,7 @@ var overlays = {
 
 L.control.layers(null,overlays, {collapsed: false}).addTo(map);
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
     maxZoom: 18,
     id: 'mapbox.streets',
     accessToken: 'your.mapbox.access.token'
