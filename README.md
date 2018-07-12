@@ -156,7 +156,6 @@ var overlays = {
 };
 
 
-L.control.layers(null,overlays, {collapsed: false}).addTo(map);
 
 var CartoDB_PositronNoLabels = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}{r}.png', {
 	subdomains: 'abcd'
