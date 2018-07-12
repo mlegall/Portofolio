@@ -144,7 +144,7 @@ L.circleMarker([48.5807445,7.7465913], {
 }).bindPopup("Serveuse").addTo(Experiences);
     
 //CREATION CARTO
- var map = L.map("map", {
+var map = L.map("map", {
 		layers: [Cursus, Stages, Experiences],
     center: [46.8013913,-31.0235914]
     });
@@ -156,7 +156,7 @@ var overlays = {
 };
 
 
-L.control.layers(null,overlays).addTo(map);
+L.control.layers(null,overlays, {collapsed: false}).addTo(map);
 
 var CartoDB_PositronNoLabels = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}{r}.png', {
 	subdomains: 'abcd'
