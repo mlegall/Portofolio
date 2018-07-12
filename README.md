@@ -25,7 +25,7 @@
 }
 
 </style>
-<svg width="960" height="500"></svg>
+<svg width="100%" height="10%"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 var svg = d3.select("svg").on("touchmove mousemove", moved),
