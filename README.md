@@ -104,9 +104,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.marker([51.5, -0.09]).addTo(map)
     .openPopup();
     
-var education = L.circle([51.442749,-0.2208968],
+var circle = L.circle([51.442749,-0.2208968],
 [48.117232,-1.6734248],
-[48.1176084,-1.6661783]
+[48.1176084,-1.6661783],
 {
     color: 'orange',
     stroke: false,
