@@ -6,8 +6,8 @@ plugins:
   - jekyll-seo-tag
 
 
-title: [Marine Le Gall]
-description: [marinelg@protonmail.com]
+title: Marine Le Gall
+description: marinelg@protonmail.com
 logo: /logo.png
 show_downloads: true
 
