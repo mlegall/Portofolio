@@ -12,6 +12,5 @@ Vous trouverez ici la présentation de différents projets que j'ai pu réaliser
 <body>
   <h1>Parcours</h1>
   
-<iframe width="100%" height="400" src="//jsfiddle.net/sgu5dc0k/406/embedded/result/" allowpaymentrequest frameborder="0"></iframe>
-
+<iframe width="100%" height="300" src="//jsfiddle.net/sgu5dc0k/607/embedded/result/?fontColor=FFFFFF&accentColor=FFFFFF&bodyColor=FFFFFF&menuColor=FFFFFF" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 </body>
