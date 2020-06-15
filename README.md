@@ -1,6 +1,5 @@
 <meta charset="utf-8">
 <head>
-Bienvenue !
 
 Vous trouverez ici la présentation de différents projets que j'ai pu réaliser durant mes études ou bien lors d'expériences professionnelles.
 </head>
